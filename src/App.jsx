@@ -1,19 +1,18 @@
-import NavBar from "./components/NavBar"
-import Footer from "./components/Footer"
-import NavRouter from "./routes/Nav.Routes";
-import { BrowserRouter } from "react-router-dom";
-import Layout from "./components/layouts/DefaultLayout"
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import MainRouter from "./pages/Router";
+import Layout from "./components/layouts/DefaultLayout";
 
 function App() {
   return (
-          <BrowserRouter>
-          <NavBar/>
-            <Layout>
-                <NavRouter/>
-            </Layout>
-            <Footer/>
-          </BrowserRouter>
-  )
+    <>
+      <NavBar />
+      <Layout>
+        <MainRouter />
+      </Layout>
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
